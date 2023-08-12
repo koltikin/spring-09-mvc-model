@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mentor</title>
+</head>
+<body>
+
+<table>
+  <thead>
+  <tr>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Age</td>
+    <td>Gender</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="mentor : ${mentorList}">
+    <td th:text="${mentor.getFirstName()}"></td> <!-- it replace Mike  -->
+    <td th:text="${mentor.getLastName}"></td>
+    <td th:text="${mentor.getAge}"></td>
+    <td th:text="${mentor.getGender()}"></td>
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+</body>
+</html>
