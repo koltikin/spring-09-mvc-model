@@ -1,11 +1,11 @@
-package com.cydeo.config;
+package com.cydeo.bootStrap;
 
 import lombok.Getter;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
-@Configuration
+@Component
 @Getter
 public class myRandom {
 

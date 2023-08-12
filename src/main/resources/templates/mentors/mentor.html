@@ -17,16 +17,12 @@
   </thead>
   <tbody>
   <tr th:each="mentor : ${mentorList}">
-    <td th:text="${mentor.getFirstName()}"></td> <!-- it replace Mike  -->
+    <td th:text="${mentor.getFirstName()}">Mike</td> <!-- it replaces Mike with model data  -->
     <td th:text="${mentor.getLastName}"></td>
     <td th:text="${mentor.getAge}"></td>
     <td th:text="${mentor.getGender()}"></td>
   </tr>
   </tbody>
 </table>
-
-
-
-
 </body>
 </html>

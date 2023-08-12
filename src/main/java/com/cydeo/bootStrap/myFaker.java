@@ -1,10 +1,10 @@
-package com.cydeo.config;
+package com.cydeo.bootStrap;
 
 import com.github.javafaker.Faker;
 import lombok.Getter;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 @Getter
 public class myFaker {
     private final Faker myfaker;
