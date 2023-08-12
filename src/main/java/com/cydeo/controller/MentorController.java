@@ -13,7 +13,7 @@ public class MentorController {
     @RequestMapping("/mentor")
     public String getMentors(Model model){
 
-        var mentorList = dataGenerate.getMentorList(200);
+        var mentorList = dataGenerate.getMentorList(2);
 
         model.addAttribute("mentorList",mentorList);
 //        model.addAttribute(mentorList); // we can add like this without attributeName;
